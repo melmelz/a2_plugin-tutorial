@@ -1,42 +1,59 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-
-    <!-- METADATA GOES HERE -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>ICA 4</title>
-    <link href="style.css" rel="stylesheet">
-
-    <!-- BOOTSTRAP 5 -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
-        </script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-
-    <!-- GSAP SCROLLTRIGGER -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
-
-    <!-- SWIPER.JS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-
-    <!-- JQUERY -->
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
-        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A2 - GSAP ScrollTrigger</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
+    <div class="cards">
+        <div class="card card-1">
+            <h2>Welcome to GSAP ScrollTrigger!</h2>
+            <div><h4> Scroll to reveal cards!</h4></div>
+        </div>
 
+        <div class="card card-2">
+            <h3>What is GSAP ScrollTrigger?</h3>
+            <p>GSAP ScrollTrigger is a JavaScript plugin that triggers animations by the user’s scroll position.</p>
+            <p>It links animations to scroll events, making it easy to sync content with how far a user has scrolled.  It can animate elements to fade, slide, rotate, or transform based on scroll events.</p>
 
+            <h3>Example: Card Stacker</h3>
+            <p>I used ScrollTrigger to animate cards stacking. As users scroll down, the next card is revealed and placed on top of the previous card.</p>
+            <p>This helps break down big concepts into smaller digestable chunks while keeping the users engaged with the subtle animations. </p>
+        </div>
 
+        <div class="card card-3">
+            <h3>Strengths</h3>
+            <ul>
+                <li><b>High-Performance:</b> Optimized for complex, smooth animations.</li>
+                <li><b>Customizable:</b> Allows fine control over animations (timing, speed, effects).</li>
+                <li><b>User-friendly:</b> Intuitive API for adding scroll-triggered effects.</li>
+                <li><b>Responsive:</b> Works well on mobile and desktop devices.</li>
+                <li><b>GSAP:</b> Integrates with other GSAP tools for more complex animations.</li>
+            </ul>
+        </div>
 
+        <div class="card card-4">
+            <h3>When to Use</h3>
+            <ul>
+                <li><b>Storytelling:</b> Revealing content step-by-step as the user scrolls, creating an engaging narrative experience.</li>
+                <li><b>E-Commerce:</b> Animating product details and images as users scroll to keep them engaged with dynamic content.</li>
+                <li><b>Portfolios:</b> Showcasing work with smooth animations that highlight each project as users scroll.</li>
+                <li><b>Progress Bars:</b> Displaying scroll progress with animated bars that fill as the user scrolls through the page.</li>
+                <li>Etc</li>
+            </ul>
+                
+        </div>
+    </div>
 
+    <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollToPlugin.min.js"></script>
+    <script src="script.js"></script>
 </body>
 
 </html>
